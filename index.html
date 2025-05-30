@@ -111,9 +111,6 @@
                         highR = maxR;
                         lowS = minS;
                         highS = maxS;
-
-                        document.querySelector("#nspl").textContent =
-                            `Number of Species (${minS.toString()}-${maxS.toString()}):`;
                         // (PART A) LOOP THROUGH DUAL RANGE SLIDERS
                         document
                             .querySelectorAll("#rangeSpecies")
@@ -380,6 +377,18 @@
 
         <div class="text-center">
             <h1>Cesium Database Lookup</h1>
+            <p style="margin-left: 8em; margin-right: 8em">
+                Cesium a public database containing approximately 2000
+                oscillating networks with between three and nine species created
+                using a customized evolution algorithm, an optimization process
+                based on the iterative improvement of candidate models. Also
+                within this database are approximately 8000 randomly generated
+                models with between one and ten species. All models are written
+                in Antimony, a chemical network modeling language. You can
+                select models using the range sliders below, and download the
+                models which fit your selected criteria as a ZIP archive by
+                pressing the "download" button.
+            </p>
             <form id="form">
                 <label id="nspl" for="numSpecies">Number of Species:</label
                 ><br />
@@ -457,6 +466,7 @@
                 style="justify-content: center; display: flex"
             ></div>
             <br />
+            <p></p>
         </div>
     </body>
 </html>
