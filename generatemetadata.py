@@ -44,7 +44,7 @@ async def main():
                 x+=1
                 print(x)
 
-    with open(os.path.join(dir_path, "cesium_metadata.json"), "w") as outfile:
+    with open(os.path.join(dir_path, "metadata.json"), "w") as outfile:
         json.dump(directory, outfile, indent=4)
 
 if __name__ == "__main__":
